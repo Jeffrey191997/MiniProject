@@ -320,7 +320,7 @@ app.post("/login", async (req, res) => {
           return res.json({
             success: true,
             message: 'Authentication Success',
-          }).cookie("user", token)
+          })
       } else {
         return res.json({
           success: false,
